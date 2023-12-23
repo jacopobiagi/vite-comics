@@ -1,7 +1,7 @@
 <script>
 import appHeader from './components/appHeader.vue';
 import appMain from './components/appMain.vue';
-import appFooter from './components/appFooter.vue'
+import appFooter from './components/appFooter.vue';
 
 export default{
   components: {
@@ -14,15 +14,15 @@ export default{
 
 <template>
   <section>
-    <appHeader msg="vite + vue"/>
+    <appHeader/>
   </section>
 
   <section>
-    <appMain />
+    <appMain/>
   </section>
 
   <section>
-    <appFooter />
+    <appFooter/>
   </section>
 </template>
 
