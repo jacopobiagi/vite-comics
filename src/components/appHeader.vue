@@ -35,20 +35,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-
     header{
         min-height: 100px;
         width: 100vw;
         display: flex;
-        justify-content: space-around;
-        border-bottom: 1px solid black;
+        justify-content: space-between;
+        padding: 0 10%;
 
         div{
             display: flex;
@@ -72,10 +64,10 @@ export default {
             div{
                 height: 100%;
                 display: flex;
-                margin: 0 5px;
+                margin: 0 8px;
                 align-items: center;
                 font-weight: bold;
-                font-size: 0.8em;
+                font-size: 0.6em;
             }
         }
     }
