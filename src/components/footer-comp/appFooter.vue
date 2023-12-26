@@ -8,6 +8,28 @@ export default{
                 '../../vue-dc-comics-1/img/footer-youtube.png',
                 '../../vue-dc-comics-1/img/footer-pinterest.png',
                 '../../vue-dc-comics-1/img/footer-periscope.png'
+            ],
+            objShop: [
+                {
+                    img: '../../vue-dc-comics-1/img/buy-comics-digital-comics.png',
+                    desc: 'DIGITAL COMICS'
+                },
+                {
+                    img: '../../vue-dc-comics-1/img/buy-comics-merchandise.png',
+                    desc: 'DC MERCHANDISE'
+                },
+                {
+                    img: '../../vue-dc-comics-1/img/buy-comics-subscriptions.png',
+                    desc: 'SUBSCRIPTION'
+                },
+                {
+                    img: '../../vue-dc-comics-1/img/buy-dc-power-visa.svg',
+                    desc: 'COMIC SHOP LOCATOR'
+                },
+                {
+                    img: '../../vue-dc-comics-1/img/buy-comics-digital-comics.png',
+                    desc: 'DC POWER VISA'
+                },
             ]
         }
     }
@@ -15,6 +37,14 @@ export default{
 </script>
 
 <template>
+    <div class="shop">
+        <div v-for="obj in objShop">
+            <div>
+                <img :src="obj.img" alt="d-c">
+            </div>
+            <h3>{{ obj.desc }}</h3>
+        </div>
+    </div>
     <footer>
         <div class="dc-block">
             <div class="dc-lists">
@@ -56,7 +86,7 @@ export default{
                 </div>
             </div>
             <div class="big-logo">
-                <img src="../../vue-dc-comics-1/img/dc-logo-bg.png" alt="big-logo">
+                <img src="../../../vue-dc-comics-1/img/dc-logo-bg.png" alt="big-logo">
             </div>
         </div>
         <div class="sign-up">
@@ -78,6 +108,34 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+    .shop {
+        padding: 0 5%;
+        display: flex;
+        background-color: rgb(2, 130, 249);
+        height: 120px;
+
+        div {
+            width: calc(100% / 5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                width: 40px;
+                margin-right: 5px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                color: white;
+                font-size: 0.7em;
+                font-weight: 400;
+            }
+        }
+    }
     footer{
         height: calc(100vh - 320px);
 

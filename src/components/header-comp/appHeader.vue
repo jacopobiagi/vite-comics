@@ -23,10 +23,10 @@ export default {
 <template>
     <header>
         <div class="logo">
-            <img src="../../vue-dc-comics-1/img/dc-logo.png" alt="">
+            <img src="../../../vue-dc-comics-1/img/dc-logo.png" alt="">
         </div>
         <div class="header-menu">
-            <div v-for="option in options">
+            <div v-for="option in options" @click="btnCheck">
                 <span>{{option}}</span>
             </div>
             
