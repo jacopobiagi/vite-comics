@@ -37,15 +37,16 @@ export default{
 </script>
 
 <template>
-    <div class="shop">
-        <div v-for="obj in objShop">
-            <div>
-                <img :src="obj.img" alt="d-c">
-            </div>
-            <h3>{{ obj.desc }}</h3>
-        </div>
-    </div>
+    
     <footer>
+        <div class="shop">
+            <div v-for="obj in objShop">
+                <div>
+                    <img :src="obj.img" alt="d-c">
+                </div>
+                <h3>{{ obj.desc }}</h3>
+            </div>
+        </div>
         <div class="dc-block">
             <div class="dc-lists">
                 <div>

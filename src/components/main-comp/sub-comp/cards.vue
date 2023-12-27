@@ -10,19 +10,34 @@ export default{
 </script>
 
 <template>
-    <div class="series">
-        <img :src="img" alt="img" class="">
+
+    <div class="content-series">
+        <div class="series">
+            <img :src="img" alt="img" class="">
+        </div>
+        <span>{{ series }}</span>
     </div>
+    
 
 </template>
 
 <style lang="scss" scoped>
-    .series{
-        width: 110px;
-        height: 90px;
-        img{
+    .content-series{
+        width: calc(100% / 6);
+        padding: 20px;
+
+        .series{
             width: 100%;
-            height: 100%;
+            height: 130px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        span{
+            color: white;
+            font-size: 0.9em;
         }
     }
+    
 </style>
